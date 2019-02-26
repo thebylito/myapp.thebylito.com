@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "10.15.1"
+cache:
+  yarn: true
+  directories:
+    - "node_modules"
+script:
+  - node ace test
