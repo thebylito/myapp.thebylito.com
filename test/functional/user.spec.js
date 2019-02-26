@@ -14,13 +14,15 @@ let user = {
    const user = await User.findBy('email', 'thebylito@gmail.com')
    if(user){
      await user.delete()
-   }
+    }
+    return;
  })
  before(async () => {
    const user = await User.findBy('email', 'thebylito@gmail.com')
    if(user){
      await user.delete()
    }
+   return;
  })
 
 test('Create a new user', async ({ client }) => {
