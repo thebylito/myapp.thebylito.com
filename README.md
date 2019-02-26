@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/thebylito/myapp.thebylito.com.svg?branch=master)](https://travis-ci.com/thebylito/myapp.thebylito.com)
+
 # Adonis fullstack application
 
 This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
@@ -20,7 +22,6 @@ adonis new yardstick
 ```
 
 or manually clone the repo and then run `npm install`.
-
 
 ### Migrations
 
