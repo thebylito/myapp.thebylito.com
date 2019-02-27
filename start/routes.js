@@ -16,4 +16,10 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
+
+Route.group(()=>{
+  Route.post('/', 'UserController.create')
+  Route.put('/', 'UserController.update')
+  Route.delete('/:id', 'UserController.delete')
+}).prefix('/user')
 Route.on('/').render('welcome')
